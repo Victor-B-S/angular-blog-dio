@@ -9,6 +9,7 @@ import {dataFake} from '../../data/dataFake'
 })
 export class ContentComponent implements OnInit {
   photoCover:string = ""
+  photoCoverAlt:string = ""
   contentTitle:string = ""
   contentDescription:string = ""
   private id:string | null = "0"
@@ -31,6 +32,7 @@ export class ContentComponent implements OnInit {
     this.contentTitle = result.title
     this.contentDescription = result.description
     this.photoCover = result.photoCover
+    this.photoCoverAlt = result.photoCoverAlt
   }
 
 }
